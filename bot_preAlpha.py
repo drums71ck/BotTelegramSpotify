@@ -1,5 +1,7 @@
 # -*- coding: utf-8 -*-
-
+# author: Eduardo Apaza y Diego Fernández
+# Version: Pre-alpha 
+# link: https://github.com/drums71ck/BotTelegramSpotify.git
 from http import client
 from multiprocessing import context
 from unittest import result
