@@ -80,11 +80,13 @@ def start(update, context):
 
 
 	#----------------------------------------------------------------
+	
+def help(update , context):
+	context.bot.send_message(update.message.chat_id, "Comandos:\n-/comands mes (Lo mejor del més), /comands hoy (Lo mejor del momento), /comands mejor (Lo mejor a secas)\nBusqueda:\n-/track (Cambiar a canciones)\n-/artist (Cambiar a artistas)\n-/album (Cambiar a albumes)\n-/playlist (Cambiar a listas de musica")
 
 def comands(update , context):
 	args = context.args
-	chat_id = update.message.chat_id
-	
+	chat_id = update.message.chat_id	
 		
 	
 	if(len(args) > 0):
@@ -219,6 +221,8 @@ def main():
 	# Eventos que activarán nuestro bot.
 	dp.add_handler(CommandHandler('start',	start))
 	dp.add_handler(CommandHandler('comands', comands))
+	# Comando para mostrar los posibles comandos
+	dp.add_handler(CommandHandler('help',help))
 	dp.add_handler(CommandHandler('start',start))
 	dp.add_handler(CommandHandler('track',track))
 	dp.add_handler(CommandHandler('artist',artist))
