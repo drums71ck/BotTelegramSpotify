@@ -26,8 +26,8 @@ from telegram.ext import (Updater, CommandHandler)
 from telegram import InlineKeyboardMarkup, InlineKeyboardButton, Voice # Necesario para bfrom telebot.types import InlineKeyboardMarkup, InlineKeyboardButtonotones
 
 
-client_id = "766b6ab76dbc438e8055498cf29f246b"
-client_secret ="705f489444d74a478589a453024f50c8"
+client_id = "Enter your token here"
+client_secret ="Enter your token here"
 
 import webbrowser # for make a link
 sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials (client_id,client_secret))
@@ -214,7 +214,7 @@ def spotifyBrowser (update,context,query, query_type):
 	'''
 	
 def main():
-	TOKEN="5681916450:AAEaLRcvNbApeDLfTLlW4YDqXVW5Fua43ms"
+	TOKEN="Enter your Token bot here"
 	updater=Updater(TOKEN, use_context=True)
 	dp=updater.dispatcher
 	
